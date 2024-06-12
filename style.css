@@ -63,3 +63,24 @@ html {
 .flex-end {
   justify-content: flex-end;
 }
+
+.search-section i,
+.user-section i,
+.greeting-section span {
+  font-size: 2rem;
+  color: var(--base-color);
+  cursor: pointer;
+}
+
+/* Search Section */
+.search-section input {
+  height: 60%;
+  width: 80%;
+  color: var(--base-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid var(--base-color);
+  border-radius: 2rem;
+  padding: 0.8rem 1rem;
+}
