@@ -222,3 +222,27 @@ html {
 .nav-list li:hover > * {
   color: var(--darker-color);
 }
+
+/* Content */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding-inline: 2.5rem;
+  padding-top: 1rem;
+  background-color: var(--lightest-color);
+  color: var(--base-color);
+}
+
+.extras {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.extras > div:last-child {
+  margin-top: 0.7rem;
+}
+
+.bottom-margin {
+  margin-bottom: 0.5rem;
+}
