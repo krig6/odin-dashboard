@@ -74,12 +74,12 @@ html {
 
 /* Dark Mode colors */
 .dark-mode {
-  --lightest-color: hsl(193, 72%, 5%);
-  --lighter-color: hsl(193, 72%, 15%);
-  --light-color: hsl(193, 72%, 25%);
-  --base-color: #0081a7;
-  --dark-color: hsl(243, 45%, 80%);
-  --darker-color: hsl(241, 72%, 100%);
+  --lightest-color: #1c1c1c; /* Dark gray or near-black background */
+  --lighter-color: #333333; /* Slightly lighter gray */
+  --light-color: #bdb9b9; /* Lighter gray */
+  --base-color: #ffffffcc; /* White for text */
+  --dark-color: #666666; /* Darker gray for accents */
+  --darker-color: #999999; /* Even darker gray for subtle elements */
 }
 
 .container {
@@ -404,7 +404,7 @@ html {
 }
 
 .project-card:hover a {
-  color: var(--darker-color);
+  color: var(--dark-color);
 }
 
 .announcement:hover,
