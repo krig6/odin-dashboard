@@ -399,6 +399,14 @@ html {
   border-left-color: var(--darker-color);
 }
 
+.project-card:hover p {
+  color: var(--dark-color);
+}
+
+.project-card:hover a {
+  color: var(--darker-color);
+}
+
 .announcement:hover,
 .trending:hover {
   transform: scale(1.02);
