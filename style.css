@@ -174,3 +174,51 @@ html {
 .user-section a:hover {
   transform: rotate(720deg);
 }
+
+/* Sidebar */
+.sidebar {
+  grid-row: 1/-1;
+  height: 100vh;
+  width: 20rem;
+  background-color: var(--light-color);
+}
+
+.sidebar .nav-list {
+  padding-block: 2rem;
+}
+
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: var(--base-color);
+  margin-block: 1rem;
+}
+
+.sidebar .logo i {
+  font-size: 4.1rem;
+}
+
+.nav-list li {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  transition: var(--transition-normal);
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: var(--base-color);
+  text-decoration: none;
+}
+
+.nav-list li:hover {
+  background-color: var(--lighter-color);
+}
+
+.nav-list li:hover > * {
+  color: var(--darker-color);
+}
