@@ -393,3 +393,15 @@ html {
 .news:not(:last-child) {
   border-bottom: 2px solid var(--base-color);
 }
+
+.project-card:hover {
+  transform: scale(1.02);
+  border-left-color: var(--darker-color);
+}
+
+.announcement:hover,
+.trending:hover {
+  transform: scale(1.02);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
