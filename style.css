@@ -27,6 +27,51 @@ html {
   --transition-slow: all 0.5s;
 }
 
+/* Keyframe animations */
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Dark Mode colors */
 .dark-mode {
   --lightest-color: hsl(193, 72%, 5%);
@@ -111,4 +156,21 @@ html {
 .action-section button:hover {
   background-color: var(--lightest-color);
   transform: scale(0.95);
+}
+
+/* Animations */
+.bell-vibrate:hover {
+  animation: vibrate 0.1s infinite;
+}
+
+.user-section i:not(.bell-vibrate):hover {
+  animation: twinkle 1.5s infinite;
+}
+
+.user-section a {
+  transition: var(--transition-slow);
+}
+
+.user-section a:hover {
+  transform: rotate(720deg);
 }
