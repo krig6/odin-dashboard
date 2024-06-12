@@ -36,3 +36,30 @@ html {
   --dark-color: hsl(243, 45%, 80%);
   --darker-color: hsl(241, 72%, 100%);
 }
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+/* Header Styling */
+.dashboard-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: 1/2;
+  width: 100%;
+  background-color: var(--lightest-color);
+  border-bottom: 2px solid var(--base-color);
+  padding: 0.8rem 4rem;
+}
+
+.dashboard-header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
