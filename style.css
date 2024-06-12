@@ -246,3 +246,90 @@ html {
 .bottom-margin {
   margin-bottom: 0.5rem;
 }
+
+/* Project Section */
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 218px;
+  width: 550px;
+  border-radius: 0.8rem;
+  border: 1px solid var(--darker-color);
+  border-left: 10px solid var(--base-color);
+  padding-inline: 1.5rem;
+  transition: var(--transition-normal);
+}
+
+.project-card a,
+.project-card i {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  left: 420px;
+}
+
+.card-content {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.card-content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  color: var(--base-color);
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.5rem;
+}
+
+.card-content a {
+  color: var(--base-color);
+  font-weight: 500;
+}
+
+.card-buttons .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.card-buttons i:hover {
+  transform: scale(1.1);
+}
+
+.card-buttons .tooltip:hover::after {
+  content: attr(aria-label);
+  position: absolute;
+  font-size: 0.8rem;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  background-color: var(--base-color);
+  color: var(--lightest-color);
+  white-space: nowrap;
+  border-radius: 4px;
+  padding: 5px;
+  transform: translate(-50%);
+}
