@@ -196,6 +196,11 @@ html {
   margin-block: 1rem;
 }
 
+.sidebar .logo a {
+  text-decoration: none;
+  color: var(--base-color);
+}
+
 .sidebar .logo i {
   font-size: 4.1rem;
 }
