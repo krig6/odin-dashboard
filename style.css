@@ -421,3 +421,34 @@ html {
   background-color: var(--light-color);
   color: var(--dark-color);
 }
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 0;
+  bottom: 0;
+  width: 5px; /* Adjust this value to control the thickness of the bar */
+  background-color: var(--dark-color); /* Color of the bar */
+  transform: scaleY(0);
+  transition: var(--transition-slow) ease;
+}
+
+.nav-list li:hover::before {
+  transform: scaleY(1);
+}
